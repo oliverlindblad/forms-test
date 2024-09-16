@@ -4,55 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Forms Test</title>
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
 </head>
 
 <body>
-    <div class="container">
-        <form name="contact" Netlify>
-            <div class="row">
-                <div class="col-25">
-                    <label for="fname">Fulde navn</label>
-                </div>
-                <div class="col-75">
-                    <input type="text" id="fname" name="firstname" placeholder="Bent Bentsen..">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="email">Email</label>
-                </div>
-                <div class="col-75">
-                    <input type="text" id="email" name="email" placeholder="Skriv din email..">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="country">Land</label>
-                </div>
-                <div class="col-75">
-                    <select id="country" name="country">
-                        <option value="Danmark">Danmark</option>
-                        <option value="Norge">Norge</option>
-                        <option value="Sverige">Sverige</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="subject">Skriv!!!</label>
-                </div>
-                <div class="col-75">
-                    <textarea id="subject" name="subject" placeholder="Jeg har glemt mit password.."
-                        style="height:200px"></textarea>
-                </div>
-            </div>
-            <div class="row">
-                <input type="submit" value="Send email">
-            </div>
-        </form>
-    </div>
+    <form name="contact" Netlify>
+
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login
+            </button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+
+        <div class="container" style="background-color:yellow">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="login.html">password?</a></span>
+        </div>
+    </form>
 </body>
 
 </html>
